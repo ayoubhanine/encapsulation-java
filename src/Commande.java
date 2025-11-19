@@ -22,10 +22,19 @@ public class Commande {
     public void ajouterProduit(Produit p){
         produits.add(p);
     }
-    public void calculerTotal(){
+
+    public  double calculerTotal(){
+        double total=0;
         System.out.println("le totale du produits est :");
         for (Produit p :produits){
-
+            total+=p.getPrix()*p.getQuantite();
         }
+        return total;
     }
+    public void afficherproduits(){
+        for(Produit p:produits){
+        System.out.println(p.getNom()+"-"+p.getPrix()+"-"+p.getQuantite()
+        );}
+    }
+
 }

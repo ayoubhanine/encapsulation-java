@@ -9,7 +9,6 @@ public class CCours {
         this.id_cour=id_cour;
         this.titre=titre;
         this.etudiantsinscris=new ArrayList<>();}
-
     public List<Etudiant> getEtudiantsinscris() {
         return etudiantsinscris;
     }
@@ -47,7 +46,6 @@ public class CCours {
                 System.out.println("nom :"+e.getNom());
             }}
     }
-
     @Override
     public String toString() {
         return "CCours{" +
